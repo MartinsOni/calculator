@@ -42,7 +42,7 @@ export class AppComponent {
     } else if (value == '=') {
       this.inputValues = eval(this.inputValues);
     } else if (value == "C") {
-      this.inputValues = ""
+      this.inputValues = this.inputValues.slice(0, this.inputValues.length-1)
     }else this.inputValues += value;
   }
 }
